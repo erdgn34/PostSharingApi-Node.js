@@ -10,10 +10,10 @@ dotenv.config();
 
 const app = express();
 
-// Veritabanına bağlan
+
 connectDB();
 
-// Body parser middleware
+
 app.use(bodyParser.json());
 
 // Rotalar
