@@ -88,6 +88,12 @@ PostSharingApp is a REST API for sharing posts with different user roles. Users 
 - `PUT /api/posts/:id`: Update a post (editor only).
 - `DELETE /api/posts/:id`: Delete a post (editor only).
 
+  ![image](https://github.com/erdgn34/PostSharingApi-Node.js/assets/116517667/bc673992-e55d-49a5-b9db-18fe2552079f)
+
+  ![image](https://github.com/erdgn34/PostSharingApi-Node.js/assets/116517667/702911fd-6691-42a9-8926-03523e6046fd)
+
+
+
 
 
 
