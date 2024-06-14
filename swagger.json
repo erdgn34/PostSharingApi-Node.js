@@ -1,0 +1,28 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Blog Post Sharing API",
+        "version": "1.0.0",
+        "description": "Blog Post Sharing API Documentation"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:3002",
+            "description": "Local server"
+        }
+    ],
+    "components": {
+        "securitySchemes": {
+            "bearerAuth": {
+                "type": "http",
+                "scheme": "bearer",
+                "bearerFormat": "JWT"
+            }
+        }
+    },
+    "security": [
+        {
+            "bearerAuth": []
+        }
+    ]
+}

@@ -69,7 +69,7 @@ const verifyEmail = async (req, res) => {
        
         return res.redirect('/verified.html');
     } catch (err) {
-        res.status(400).json({ msg: 'Invalid token' });
+        res.status(400).json({ msg: 'Invalid token',error:err });
     }
 };
 

@@ -54,6 +54,40 @@ Proje, güvenlik ve verimlilik açısından önemli teknolojileri kullanarak mod
 
 ![image](https://github.com/erdgn34/PostSharingApp/assets/116517667/51f4772a-840b-4e8b-9233-367c70ec6184)
 
+# PostSharingApp
+
+## Overview
+PostSharingApp is a REST API for sharing posts with different user roles. Users can register, verify their email, login, reset their password, and post content. The app includes roles like `user`, `editor`, and `vipuye`, each with specific permissions.
+
+## Features
+- User Registration and Email Verification
+- User Login and JWT Authentication
+- Password Reset
+- Role-Based Access Control
+- File Uploads with Restrictions
+- Post Management (Create, Update, Delete, View)
+- View Count Tracking
+
+## Roles
+- `user`: Can only read posts.
+- `editor`: Can upload PDFs, JPGs, JPEGs, PNGs, MP3s, and MP4s. Can create, update, delete, and deactivate posts.
+- `vipuye`: Can only upload PDFs.
+
+## Endpoints
+### Authentication
+- `POST /api/auth/register`: Register a new user.
+- `POST /api/auth/login`: Login and get a JWT token.
+- `POST /api/auth/request-reset-password`: Request a password reset email.
+- `POST /api/auth/reset-password/:token`: Reset password using a token.
+- `GET /api/auth/verify/:token`: Verify user email.
+
+### Posts
+- `GET /api/posts`: Get all active posts.
+- `GET /api/posts/:id`: Get a specific post and increment its view count.
+- `POST /api/posts`: Create a new post (editor only).
+- `PUT /api/posts/:id`: Update a post (editor only).
+- `DELETE /api/posts/:id`: Delete a post (editor only).
+
 
 
 
